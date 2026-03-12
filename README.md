@@ -39,6 +39,10 @@ $ DEFMT_LOG=debug cargo run
 
 <img src="example-defmt-serial.png" width="80%"></img>
 
+## Feature flags
+
+Target architectures that don't have atomic types in `core::sync::atomic` (e.g. MSP430, AVR) should enable the `portable-atomic` feature.
+
 ## Parsing logs
 
 The easiest way to parse the logs is to use `socat` and `defmt-print` together.
