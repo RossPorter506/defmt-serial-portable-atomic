@@ -42,9 +42,6 @@
 
 use core::ptr::addr_of_mut;
 use core::sync::atomic::Ordering;
-#[cfg(not(feature = "portable-atomic"))]
-use core::sync::atomic::AtomicBool;
-#[cfg(feature = "portable-atomic")]
 use portable_atomic::AtomicBool;
 
 use defmt::global_logger;

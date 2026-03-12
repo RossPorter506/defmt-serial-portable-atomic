@@ -7,14 +7,11 @@ description = "Log defmt-messages over serial"
 license = "MIT"
 repository = "https://github.com/gauteh/defmt-serial"
 
-[features]
-portable-atomic = ["dep:portable-atomic"]
-
 [dependencies]
 critical-section = "1.1"
 defmt = "0.3"
 embedded-io = "0.7"
-portable-atomic = {version = "1.13", default-features = false, optional = true }
+portable-atomic = {version = "1.13", default-features = false}
 
 [dev-dependencies]
 cortex-m-rt = "0.7"
